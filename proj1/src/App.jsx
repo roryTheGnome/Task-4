@@ -1,33 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Footer from "./Components/Footer.jsx";
+import Card from "./Components/Card/Card.jsx";
+import Title from "@/Components/Title.jsx";
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <div className="header">
+            <Title s="TASKS"/>
+        </div>
+
+        <div className="tasks">
+            <Card name="Task-1" description="HTML-CSS-Git" isActive={true} submitted={true} deadline={new Date().getDate()}/>
+            <Card name="Task-2" description="JS 1" isActive={true} submitted={true} deadline={new Date().getDate()}/>
+            <Card name="Task-3" description="JS 2" isActive={true} submitted={true} deadline={new Date().getDate()}/>
+            <Card name="Task-4" description="React" isActive={true} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-5" description="React Practice" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-6" description="TypeScript" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-7" description="TS Practice" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-8" description="Group Project" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+        </div>
+        <Footer link={"https://github.com/roryTheGnome"} owner={"Gnome"} />
     </>
   )
 }

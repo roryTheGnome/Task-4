@@ -1,3 +1,14 @@
 .logo{
-    max-width: 150px;
+    max-width: 100px;
+}
+.task{
+    border-color: rgba(255, 221, 187, 0.64);
+    background: aliceblue;
+    padding: 5px;
+    margin:15px;
+    border-radius: 15px;
+    border-width: 20px;
+    border-style: solid;
+    height: 300px;
+    width: 200px;
 }

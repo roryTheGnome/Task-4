@@ -4,10 +4,12 @@
   word-wrap: break-word;
   will-change: transform;
   line-height: 1;
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-family: 'Press Start 2P', sans-serif;
   text-transform: uppercase;
   visibility: hidden;
+    color: rgba(168, 145, 122, 0.64);
+    font-weight: bolder;
 }
 
 .shuffle-parent.is-ready {
@@ -31,3 +33,9 @@
   display: inline-block;
   text-align: center;
 }
+
+.shuffle-char-wrapper > span {
+    display: inline-flex;
+    flex-direction: row;   /* ← force horizontal */
+}
+

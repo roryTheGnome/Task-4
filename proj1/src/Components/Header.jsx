@@ -1,7 +1,9 @@
+import Title from "./Title.jsx" ;
+
 function Header(){
     return(
         <header>
-            <h1>Title</h1>
+            <Title s="TASKS"/>
             <ul>
                 <li><a href='#'>Home</a> </li>
                 <li><a href='#'>About</a> </li>
