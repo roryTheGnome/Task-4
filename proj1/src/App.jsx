@@ -10,7 +10,23 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-      <h1>Heelo</h1>
+    <>
+        <div className="header">
+            <Title s="TASKS"/>
+        </div>
+
+        <div className="tasks">
+            <Card name="Task-1" description="HTML-CSS-Git" isActive={true} submitted={true} deadline={new Date().getDate()}/>
+            <Card name="Task-2" description="JS 1" isActive={true} submitted={true} deadline={new Date().getDate()}/>
+            <Card name="Task-3" description="JS 2" isActive={true} submitted={true} deadline={new Date().getDate()}/>
+            <Card name="Task-4" description="React" isActive={true} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-5" description="React Practice" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-6" description="TypeScript" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-7" description="TS Practice" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+            <Card name="Task-8" description="Group Project" isActive={false} submitted={false} deadline={new Date().getDate()}/>
+        </div>
+        <Footer link={"https://github.com/roryTheGnome"} owner={"Gnome"} />
+    </>
   )
 }
 
