@@ -31,6 +31,22 @@ footer a:visited {
     color: purple;
 }
 
+
+
+.musicbutton{
+    background: rgba(250, 126, 59, 0.6);
+    font-size: 1.5em;
+    font-family:  sans-serif;
+    color: rgba(255, 255, 255, 0.92);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    border-style: dotted;
+}
+
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);

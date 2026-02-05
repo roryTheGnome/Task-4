@@ -1,6 +1,6 @@
 import Shuffle from './Shuffle';
 
-function Footer({link, owner}){
+function Footer(props){
     return(
         <footer className="inline-flex items-center gap-1">
             <Shuffle
@@ -18,7 +18,7 @@ function Footer({link, owner}){
                 loop={true}
                 loopDelay={1}
             />
-            <a href={link} style={{fontSize:"2em", fontFamily: 'Press Start 2P'}}> {owner} </a>
+            <a href={props.link} style={{fontSize:"2em", fontFamily: 'Press Start 2P'}}> {props.owner} </a>
             <Shuffle
                 text={" with ☕ and ❤️"}
                 shuffleDirection="down"
